@@ -2,7 +2,7 @@
 //  AppDelegate.swift
 //  ProdataTask
 //
-//  Created by Feqan Aslanli on 05.04.24.
+//  Created by Cavidan Mustafayev on 05.04.24.
 //
 
 import UIKit

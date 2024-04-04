@@ -9,21 +9,41 @@
 /* Begin PBXBuildFile section */
 		409348C12BBF5E80000101AF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409348C02BBF5E80000101AF /* AppDelegate.swift */; };
 		409348C32BBF5E80000101AF /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409348C22BBF5E80000101AF /* SceneDelegate.swift */; };
-		409348C52BBF5E80000101AF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409348C42BBF5E80000101AF /* ViewController.swift */; };
+		409348C52BBF5E80000101AF /* RestaurauntController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409348C42BBF5E80000101AF /* RestaurauntController.swift */; };
 		409348C82BBF5E80000101AF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409348C62BBF5E80000101AF /* Main.storyboard */; };
 		409348CA2BBF5E81000101AF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 409348C92BBF5E81000101AF /* Assets.xcassets */; };
 		409348CD2BBF5E81000101AF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 409348CB2BBF5E81000101AF /* LaunchScreen.storyboard */; };
+		409C1BE52BBF5F6200BD4C73 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409C1BE42BBF5F6200BD4C73 /* MapViewController.swift */; };
+		409C1BE82BBF5F9400BD4C73 /* RestaurantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409C1BE62BBF5F9400BD4C73 /* RestaurantCell.swift */; };
+		409C1BE92BBF5F9400BD4C73 /* RestaurantCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 409C1BE72BBF5F9400BD4C73 /* RestaurantCell.xib */; };
+		409C1BEB2BBF5FD700BD4C73 /* RestaurauntViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409C1BEA2BBF5FD700BD4C73 /* RestaurauntViewModel.swift */; };
+		409C1BED2BBF602F00BD4C73 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409C1BEC2BBF602F00BD4C73 /* Extensions.swift */; };
+		409C1BEF2BBF606500BD4C73 /* RealmHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409C1BEE2BBF606500BD4C73 /* RealmHelper.swift */; };
+		409C1BF12BBF60A500BD4C73 /* UserDefaultsHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409C1BF02BBF60A500BD4C73 /* UserDefaultsHelper.swift */; };
+		409C1BF32BBF635300BD4C73 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409C1BF22BBF635300BD4C73 /* MapViewModel.swift */; };
+		409C1BF52BBF63C500BD4C73 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 409C1BF42BBF63C500BD4C73 /* WebViewController.swift */; };
+		A4D4A9592BBF666A007132B7 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = A4D4A9582BBF666A007132B7 /* Realm */; };
+		A4D4A95B2BBF666A007132B7 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = A4D4A95A2BBF666A007132B7 /* RealmSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		409348BD2BBF5E80000101AF /* ProdataTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ProdataTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		409348C02BBF5E80000101AF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		409348C22BBF5E80000101AF /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		409348C42BBF5E80000101AF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		409348C42BBF5E80000101AF /* RestaurauntController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurauntController.swift; sourceTree = "<group>"; };
 		409348C72BBF5E80000101AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		409348C92BBF5E81000101AF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		409348CC2BBF5E81000101AF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		409348CE2BBF5E81000101AF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		409C1BE42BBF5F6200BD4C73 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		409C1BE62BBF5F9400BD4C73 /* RestaurantCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurantCell.swift; sourceTree = "<group>"; };
+		409C1BE72BBF5F9400BD4C73 /* RestaurantCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RestaurantCell.xib; sourceTree = "<group>"; };
+		409C1BEA2BBF5FD700BD4C73 /* RestaurauntViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestaurauntViewModel.swift; sourceTree = "<group>"; };
+		409C1BEC2BBF602F00BD4C73 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		409C1BEE2BBF606500BD4C73 /* RealmHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmHelper.swift; sourceTree = "<group>"; };
+		409C1BF02BBF60A500BD4C73 /* UserDefaultsHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsHelper.swift; sourceTree = "<group>"; };
+		409C1BF22BBF635300BD4C73 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		409C1BF42BBF63C500BD4C73 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +51,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4D4A95B2BBF666A007132B7 /* RealmSwift in Frameworks */,
+				A4D4A9592BBF666A007132B7 /* Realm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,13 +80,102 @@
 			children = (
 				409348C02BBF5E80000101AF /* AppDelegate.swift */,
 				409348C22BBF5E80000101AF /* SceneDelegate.swift */,
-				409348C42BBF5E80000101AF /* ViewController.swift */,
-				409348C62BBF5E80000101AF /* Main.storyboard */,
+				409C1BFA2BBF643500BD4C73 /* BusinessLayer */,
+				409C1BF92BBF643100BD4C73 /* Helpers */,
 				409348C92BBF5E81000101AF /* Assets.xcassets */,
 				409348CB2BBF5E81000101AF /* LaunchScreen.storyboard */,
 				409348CE2BBF5E81000101AF /* Info.plist */,
 			);
 			path = ProdataTask;
+			sourceTree = "<group>";
+		};
+		409C1BF62BBF640200BD4C73 /* ViewModules */ = {
+			isa = PBXGroup;
+			children = (
+				409C1BFD2BBF646E00BD4C73 /* Restauraunt */,
+				409C1BFE2BBF647C00BD4C73 /* Map */,
+				409C1BF42BBF63C500BD4C73 /* WebViewController.swift */,
+			);
+			path = ViewModules;
+			sourceTree = "<group>";
+		};
+		409C1BF72BBF641500BD4C73 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				409C1BFF2BBF649700BD4C73 /* Storyboards */,
+				409C1BFC2BBF645C00BD4C73 /* View */,
+				409C1BFB2BBF645400BD4C73 /* Cell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		409C1BF82BBF642800BD4C73 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		409C1BF92BBF643100BD4C73 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				409C1BEC2BBF602F00BD4C73 /* Extensions.swift */,
+				409C1BEE2BBF606500BD4C73 /* RealmHelper.swift */,
+				409C1BF02BBF60A500BD4C73 /* UserDefaultsHelper.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		409C1BFA2BBF643500BD4C73 /* BusinessLayer */ = {
+			isa = PBXGroup;
+			children = (
+				409C1BF82BBF642800BD4C73 /* Model */,
+				409C1BF72BBF641500BD4C73 /* Views */,
+				409C1BF62BBF640200BD4C73 /* ViewModules */,
+			);
+			path = BusinessLayer;
+			sourceTree = "<group>";
+		};
+		409C1BFB2BBF645400BD4C73 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				409C1BE62BBF5F9400BD4C73 /* RestaurantCell.swift */,
+				409C1BE72BBF5F9400BD4C73 /* RestaurantCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		409C1BFC2BBF645C00BD4C73 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		409C1BFD2BBF646E00BD4C73 /* Restauraunt */ = {
+			isa = PBXGroup;
+			children = (
+				409348C42BBF5E80000101AF /* RestaurauntController.swift */,
+				409C1BEA2BBF5FD700BD4C73 /* RestaurauntViewModel.swift */,
+			);
+			path = Restauraunt;
+			sourceTree = "<group>";
+		};
+		409C1BFE2BBF647C00BD4C73 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				409C1BE42BBF5F6200BD4C73 /* MapViewController.swift */,
+				409C1BF22BBF635300BD4C73 /* MapViewModel.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		409C1BFF2BBF649700BD4C73 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				409348C62BBF5E80000101AF /* Main.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +194,10 @@
 			dependencies = (
 			);
 			name = ProdataTask;
+			packageProductDependencies = (
+				A4D4A9582BBF666A007132B7 /* Realm */,
+				A4D4A95A2BBF666A007132B7 /* RealmSwift */,
+			);
 			productName = ProdataTask;
 			productReference = 409348BD2BBF5E80000101AF /* ProdataTask.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +226,9 @@
 				Base,
 			);
 			mainGroup = 409348B42BBF5E80000101AF;
+			packageReferences = (
+				A4D4A9572BBF666A007132B7 /* XCRemoteSwiftPackageReference "realm-swift" */,
+			);
 			productRefGroup = 409348BE2BBF5E80000101AF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				409C1BE92BBF5F9400BD4C73 /* RestaurantCell.xib in Resources */,
 				409348CD2BBF5E81000101AF /* LaunchScreen.storyboard in Resources */,
 				409348CA2BBF5E81000101AF /* Assets.xcassets in Resources */,
 				409348C82BBF5E80000101AF /* Main.storyboard in Resources */,
@@ -138,9 +257,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				409348C52BBF5E80000101AF /* ViewController.swift in Sources */,
+				409C1BF12BBF60A500BD4C73 /* UserDefaultsHelper.swift in Sources */,
+				409C1BF52BBF63C500BD4C73 /* WebViewController.swift in Sources */,
+				409C1BF32BBF635300BD4C73 /* MapViewModel.swift in Sources */,
+				409C1BE82BBF5F9400BD4C73 /* RestaurantCell.swift in Sources */,
+				409348C52BBF5E80000101AF /* RestaurauntController.swift in Sources */,
 				409348C12BBF5E80000101AF /* AppDelegate.swift in Sources */,
 				409348C32BBF5E80000101AF /* SceneDelegate.swift in Sources */,
+				409C1BE52BBF5F6200BD4C73 /* MapViewController.swift in Sources */,
+				409C1BEF2BBF606500BD4C73 /* RealmHelper.swift in Sources */,
+				409C1BEB2BBF5FD700BD4C73 /* RestaurauntViewModel.swift in Sources */,
+				409C1BED2BBF602F00BD4C73 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -356,6 +483,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A4D4A9572BBF666A007132B7 /* XCRemoteSwiftPackageReference "realm-swift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/realm-swift";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A4D4A9582BBF666A007132B7 /* Realm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D4A9572BBF666A007132B7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = Realm;
+		};
+		A4D4A95A2BBF666A007132B7 /* RealmSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A4D4A9572BBF666A007132B7 /* XCRemoteSwiftPackageReference "realm-swift" */;
+			productName = RealmSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 409348B52BBF5E80000101AF /* Project object */;
 }
