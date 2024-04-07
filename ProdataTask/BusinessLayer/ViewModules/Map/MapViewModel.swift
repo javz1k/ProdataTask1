@@ -6,6 +6,19 @@
 //
 
 import Foundation
+import CoreLocation
+import MapKit
+
 final class MapViewModel {
     
+    var locationManager: CLLocationManager?
+    var userLocation: CLLocation?
+    var cafeAnnotation: MKPointAnnotation?
+    var cafe: CafeModel?
+
+    
+    static let shared = MapViewModel()
+    private init() {
+     
+    }
 }

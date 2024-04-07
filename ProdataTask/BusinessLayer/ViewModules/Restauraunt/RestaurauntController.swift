@@ -6,10 +6,11 @@
 //
 
 import UIKit
+import RealmSwift
 
 class RestaurauntController: UIViewController {
     @IBOutlet private weak var collectionView: UICollectionView!
-
+    let vm = RestaurauntViewModel.shared
     override func viewDidLoad() {
         super.viewDidLoad()
         setupView()
@@ -17,6 +18,7 @@ class RestaurauntController: UIViewController {
     
     fileprivate func setupView() {
         collectionView.registerNib(with: "RestaurantCell")
+        print(vm.realm.getFileUrl())
     }
     
     fileprivate func showMapController() {
@@ -30,17 +32,19 @@ extension RestaurauntController:
     UICollectionViewDataSource,
     UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 10
+        
+        return vm.cafeArray?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeCell(cellClass: RestaurantCell.self, indexPath: indexPath)
-        cell.configureCell(title: "Test")
+        cell.configureCell(title: vm.cafeArray?[indexPath.row].cafeName ?? "")
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(#function, indexPath.row)
+        vm.mapVM.cafe = vm.cafeArray?[indexPath.row]
         showMapController()
     }
     

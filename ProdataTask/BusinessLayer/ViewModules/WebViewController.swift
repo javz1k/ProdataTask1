@@ -9,12 +9,22 @@ import UIKit
 import WebKit
 
 class WebViewController: UIViewController {
-    @IBOutlet private weak var webView: WKWebView!
+    
+    @IBOutlet weak var webView: WKWebView!
+    var urlString:String?
     
     override func viewDidLoad() {
-        super.viewDidLoad()
-        navigationController?.setNavigationBarHidden(false, animated: true)
-        let url = URL(string: "https://www.google.com")
-        webView.load(URLRequest(url:url!))
-    }
+           super.viewDidLoad()
+           navigationController?.setNavigationBarHidden(false, animated: true)
+        print(urlString)
+        
+
+        if let urlString = urlString, let url = URL(string: urlString) {
+               let request = URLRequest(url:url)
+               webView.load(request)
+           } else {
+               print("Invalid URL")
+           }
+        
+       }
 }
