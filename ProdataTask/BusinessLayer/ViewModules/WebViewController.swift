@@ -16,15 +16,21 @@ class WebViewController: UIViewController {
     override func viewDidLoad() {
            super.viewDidLoad()
            navigationController?.setNavigationBarHidden(false, animated: true)
-        print(urlString)
+        print(urlString!)
         
 
-        if let urlString = urlString, let url = URL(string: urlString) {
-               let request = URLRequest(url:url)
-               webView.load(request)
-           } else {
-               print("Invalid URL")
-           }
+        webView.load(URLRequest(url:URL(string:"https://www.youtube.com")!))
+
+        let defaultURLString = "https://www.google.com"
+        if let urlString = urlString, let url = URL(string: urlString) ?? URL(string: defaultURLString) {
+            let request = URLRequest(url: url)
+            print("Request URL: \(request.url?.absoluteString ?? "nil")")
+            print("Request HTTP Method: \(request.httpMethod ?? "nil")")
+            webView.load(request)
+        } else {
+            print("Invalid URL")
+        }
+
         
        }
 }

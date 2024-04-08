@@ -8,7 +8,6 @@
 import UIKit
 import MapKit
 import CoreLocation
-import _MapKit_SwiftUI
 
 class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewDelegate {
     
@@ -17,15 +16,62 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        vm.locationManager?.delegate = self
-        vm.locationManager?.requestWhenInUseAuthorization()
         mapView.delegate = self
-        
         addCafeAnnotation()
-        ///
-        vm.locationManager = CLLocationManager()
+        setupManager()
 //        startLocationUpdates()
     }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+//        checkLocationServicesStatus() 
+    }
+    
+    func setupManager(){
+        vm.locationManager.delegate = self
+        vm.locationManager.requestWhenInUseAuthorization()
+        vm.locationManager.startUpdatingLocation()
+        vm.locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        mapView.showsUserLocation = true
+    }
+    
+//    func checkLocationServicesStatus() {
+//        let status = CLLocationManager.authorizationStatus()
+//        
+//        switch status {
+//        case .authorizedWhenInUse, .authorizedAlways:
+//            print("Location services are enabled for the app")
+//            mapView.showsUserLocation = true
+//            vm.locationManager.startUpdatingLocation()
+//            
+//        case .denied, .restricted:
+//            print("Location services are disabled for the app")
+//            DispatchQueue.main.async {
+//                let alert = UIAlertController(title: "Location is enabled", message: "Turn on!", preferredStyle: .alert)
+//                let settingsAction = UIAlertAction(title: "Settings", style: .default) { alert in
+//                    if let url = URL(string: "App-Prefs:root=LOCATION_SERVICES") {
+//                        UIApplication.shared.open(url, options: [:], completionHandler: nil)
+//                    }
+//                }
+//                let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
+//                
+//                alert.addAction(settingsAction)
+//                alert.addAction(cancelAction)
+//                self.present(alert, animated: true, completion: nil)
+//            }
+//        case .notDetermined:
+//            print("Location services authorization status not determined")
+//            vm.locationManager.requestWhenInUseAuthorization()
+//            // Location services authorization status is not determined yet, you may request authorization
+//        @unknown default:
+//            print("Unknown location services authorization status")
+//        }
+//    }
+
+
+
+   
+
     
     func addCafeAnnotation() {
         guard let cafe = vm.cafe, let cafeLat = cafe.cafeLat, let cafeLong = cafe.cafeLong else {
@@ -59,7 +105,20 @@ class MapViewController: UIViewController, CLLocationManagerDelegate, MKMapViewD
         
         let webVC = WebViewController()
         webVC.urlString = cafeURLString // Pass the URL to the WebViewController
-        present(webVC, animated: true, completion: nil)
+        navigationController?.pushViewController(webVC, animated: true)
+
+//        present(webVC, animated: true, completion: nil)
+    }
+    
+    func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
+        if let location = locations.first{
+            manager.stopUpdatingLocation()
+            render(location)
+        }
+    }
+    
+    func render(_ location: CLLocation){
+        
     }
    
     
