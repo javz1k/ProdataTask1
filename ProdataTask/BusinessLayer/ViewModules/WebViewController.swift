@@ -12,25 +12,16 @@ class WebViewController: UIViewController {
     
     @IBOutlet weak var webView: WKWebView!
     var urlString:String?
-    
+
     override func viewDidLoad() {
-           super.viewDidLoad()
-           navigationController?.setNavigationBarHidden(false, animated: true)
-        print(urlString!)
-        
-
-        webView.load(URLRequest(url:URL(string:"https://www.youtube.com")!))
-
-        let defaultURLString = "https://www.google.com"
-        if let urlString = urlString, let url = URL(string: urlString) ?? URL(string: defaultURLString) {
-            let request = URLRequest(url: url)
-            print("Request URL: \(request.url?.absoluteString ?? "nil")")
-            print("Request HTTP Method: \(request.httpMethod ?? "nil")")
-            webView.load(request)
-        } else {
-            print("Invalid URL")
-        }
-
-        
-       }
+        super.viewDidLoad()
+        navigationController?.setNavigationBarHidden(false, animated: true)
+        makeRequest(urlString:urlString ?? "https://developer.apple.com")
+      
+    }
+    
+    fileprivate func makeRequest(urlString:String){
+        webView?.load(URLRequest(url:URL(string:urlString)!))
+    }
+   
 }

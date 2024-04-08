@@ -423,7 +423,8 @@
 				DEVELOPMENT_TEAM = DZ72YP2SQU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProdataTask/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow use current location";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow use current location while using app";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Always allow use current location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -452,7 +453,8 @@
 				DEVELOPMENT_TEAM = DZ72YP2SQU;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ProdataTask/Info.plist;
-				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow use current location";
+				INFOPLIST_KEY_NSLocationAlwaysAndWhenInUseUsageDescription = "Allow use current location while using app";
+				INFOPLIST_KEY_NSLocationAlwaysUsageDescription = "Always allow use current location";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
